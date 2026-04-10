@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Sale Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div style="display: flex; justify-content: space-between;">
+        <h1 style="color: #45fbe6;">Private Sale Admin Dashboard</h1>
+    <button id="connectWalletBtn">Connect Wallet</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+      <div class="cards">
+        <div class="card">
+          <h3>Total Participants :</h3>
+          <h3 id="totalParticipants">Loading...</h3>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <input type="text" id="searchInput" placeholder="Search wallet/email..." />
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Wallet</th>
+              <th>USDT</th>
+              <th>SELSI</th>
+              <th>Solana</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="participantsTable">
+            <tr><td colspan="7">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ethers.js -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js" defer></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selsila World Official Website</title>
+    <link rel="stylesheet" href="community.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="splash-screen">
+        <div class="splash-content">
+            <video autoplay muted loop playsinline class="splash-video">
+                <source src="asset/splash.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="nav">
+            <div class="logo">
+                <img src="asset/logo2.png" alt="Selsila World Logo">
+                <h2>SELSILA</h2>
+            </div>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="community">Community</a></li>
+            </ul>
+        </nav>
+        <main class="home-marquee">
+            <div id="ads-top-right" ></div>
+            <div class="container-community">
+                <img src="asset/comunity.webp" alt="">
+                <div class="com-content">
+                    <h2>selsi community</h2>
+                    <p>
+                        Selsila proudly embraces an amazing global momentum, having connected over 336,000 members who
+                        are increasing daily and expanding our reach into 125+ nations, making this the best time for
+                        you to join this international explosion.
+                    </p>
+                </div>
+            </div>
+            <div class="statistic">
+                <h2 style="border-bottom: 1px solid #00f7ff; padding-bottom: 20px;">User Statistic</h2>
+                <div class="card-header">
+                    <h3>AFRICA</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%;"></div>
+                    </div>
+                    <p class="progress-text">30%</p>
+                </div>
+                <div class="card-header">
+                    <h3>ASIA</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 20%;"></div>
+                    </div>
+                    <p class="progress-text">20%</p>
+                </div>
+                <div class="card-header">
+                    <h3>SOUTH AMERICA</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 10%;"></div>
+                    </div>
+                    <p class="progress-text">10%</p>
+                </div>
+                <div class="card-header">
+                    <h3>NORTH AMERICA</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 8%;"></div>
+                    </div>
+                    <p class="progress-text">8%</p>
+                </div>
+                <div class="card-header">
+                    <h3>EUROPE</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 20%;"></div>
+                    </div>
+                    <p class="progress-text">20%</p>
+                </div>
+                <div class="card-header">
+                    <h3>AUSTRALIA</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 10%;"></div>
+                    </div>
+                    <p class="progress-text">10%</p>
+                </div>
+                <div class="card-header">
+                    <h3>ANTARCTICA</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 2%;"></div>
+                    </div>
+                    <p class="progress-text">2%</p>
+                </div>
+                <h4>TOTAL USERS: 336,000</h4>
+                <h4>TOTAL COUNTRIES: 125</h4>
+            </div>
+            <div class="influencer">
+                <h2 style="border-bottom: 1px solid #00f7ff; padding-bottom: 20px;">INFLUENCER/ GROUP TEAM</h2>
+                <div class="grid-influencer">
+                    <div class="card-influencer">
+                        <h4>YOUTUBE</h4>
+                    </div>
+                    <div class="card-influencer">
+                        <h4>TWITTER/ X</h4>
+                    </div>
+                    <div class="card-influencer">
+                        <h4>TELEGRAM</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-us">
+                <h2>contact us</h2>
+                <div class="contact-container">
+
+                    <form id="contactForm">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+
+                        <div class="btn">
+                            <button type="submit">SEND</button>
+                        </div>
+
+                        <div class="alert success" id="successMsg">Message sent successfully!</div>
+                        <div class="alert error" id="errorMsg">Failed to send message.</div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="container-footer">
+                <div class="footer">
+                    <div class="left-footer">
+                        <h4 style="margin-bottom: 10px;">SELSILA WORLD LIMITED</h4>
+                        <p onclick="window.location.href='index'">Home</p>
+                        <p onclick="window.location.href='about'">About</p>
+                        <p onclick="window.location.href='community'">Contact Us</p>
+                        <p onclick="window.location.href='privacy-policy'">Privacy & Policy</p>
+                        <p onclick="window.location.href='TermsandConditions'">Terms and Conditions</p>
+
+                    </div>
+                    <div class="right-footer">
+                        <!-- <p>Office : Singapore</p> -->
+                        <p>Email : support@selsiworld.com</p>
+                        <h4>Join the community</h4>
+                        <div class="logo-sosmed">
+                            <img src="asset/youtube.png" alt=""
+                                onclick="window.location.href='https://www.youtube.com/@selsiworld' ">
+                            <img src="asset/tele.png" alt=""
+                                onclick="window.location.href='https://t.me/SelsilaOfficial' ">
+                            <img src="asset/x.png" alt="" onclick="window.location.href='https://x.com/selsilaworld' ">
+                            <img src="asset/discord.png" alt=""
+                                onclick="window.location.href='https://discord.gg/eP27ufrUf' ">
+                            <img src="asset/fb.png" alt=""
+                                onclick="window.location.href='https://www.facebook.com/profile.php?id=61583416741870' ">
+                            <img src="asset/ig.png" alt=""
+                                onclick="window.location.href='https://www.instagram.com/selsilaworld' ">
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <p style="margin-bottom: 20px;">© 2025 SELSILA WORLD LIMITED</p>
+            </div>
+
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="ads.js"></script>
+</body>
+
+</html>
